@@ -1,0 +1,2251 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,700,900,900italic,700italic,300italic);
+/******************************************************************
+Site Name: Blowout | A Superlux Film
+Author: Stephen DeLorme
+
+Stylesheet: Main Stylesheet
+******************************************************************/
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+
+}
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent;
+}
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted;
+}
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap;
+}
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0;
+}
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0;
+}
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+
+  font-size: 100%;
+  /* 2 */
+
+  margin: 0;
+  /* 3 */
+
+}
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+
+  cursor: pointer;
+  /* 3 */
+
+}
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+
+  padding: 0;
+  /* 2 */
+
+}
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+
+  box-sizing: content-box;
+}
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+
+  vertical-align: top;
+  /* 2 */
+
+}
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/******************************************************************
+CUSTOMIZED RESET VALUES
+I added these extra styles as a more personalized reset. Feel free
+to remove them if you like or add your own. If you want to update
+the normalize styles, make sure to edit from this point up.
+******************************************************************/
+p {
+  -webkit-hyphens: auto;
+  -epub-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+b,
+strong,
+.strong {
+  font-weight: bold;
+}
+dfn,
+em,
+.em {
+  font-style: italic;
+}
+small,
+.small {
+  font-size: 75%;
+}
+ul,
+ol {
+  padding: 0;
+  list-style-type: none;
+}
+dd {
+  margin: 0;
+}
+.sidebar ul,
+.sidebar ol,
+.commentlist {
+  list-style: none;
+}
+/******************************************************************
+Site Name: Blowout
+Author: Stephen DeLorme
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of LESS' great features: 
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques like box shadow and
+border-radius.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more. 
+
+******************************************************************/
+/*********************
+CLEARFIXIN'
+*********************/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+/*********************
+TOOLS
+*********************/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.image-replacement {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+/*********************
+TYPOGRAPHY
+*********************/
+/* Import Roboto typeface from Google */
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the 
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('../fonts/font-name.eot');
+    	src: url('../fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('../fonts/font-name.woff') format('woff'),
+             url('../fonts/font-name.ttf') format('truetype'),
+             url('../fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+/* text alignment */
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.alert {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+}
+.alert-help {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #e8dc59;
+  background: #ebe16f;
+}
+.alert-info {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #bfe4f4;
+  background: #d5edf8;
+}
+.alert-error {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #f8cdce;
+  background: #fbe3e4;
+}
+.alert-success {
+  margin: 10px;
+  padding: 5px 18px;
+  border: 1px solid;
+  border-color: #deeaae;
+  background: #e6efc2;
+}
+/*********************
+BORDER RADIUS
+*********************/
+/* 
+NOTE: For older browser support (and some mobile), 
+don't use the shorthand to define *different* corners. 
+
+USAGE: .border-radius(4px); 
+
+*/
+/*********************
+TRANISTION
+*********************/
+/* .transition(all,2s); */
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can 
+really slow down your CSS. Don't overdo it.
+*********************/
+/* .css-gradient(#dfdfdf,#f8f8f8); */
+/*********************
+BOX SHADOW
+*********************/
+/* .boxShadow(0,0,4px,0,#444); */
+/* .boxShadow(none); */
+/*********************
+BUTTONS
+*********************/
+.button,
+.button:visited {
+  border: 1px solid #bd5f00;
+  border-top-color: #db6e00;
+  border-left-color: #db6e00;
+  padding: 4px 12px;
+  color: #ffffff;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  margin-bottom: 20px;
+  line-height: 21px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #e67300;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff8000), to(#e67300));
+  background-image: -webkit-linear-gradient(top, #ff8000, #e67300);
+  background-image: -moz-linear-gradient(top, #ff8000, #e67300);
+  background-image: -o-linear-gradient(top, #ff8000, #e67300);
+  background-image: linear-gradient(to bottom, #ff8000, #e67300);
+}
+.button:hover,
+.button:visited:hover,
+.button:focus,
+.button:visited:focus {
+  color: #ffffff;
+  border: 1px solid #bd5f00;
+  border-top-color: #994d00;
+  border-left-color: #994d00;
+  background-color: #cc6600;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e67300), to(#cc6600));
+  background-image: -webkit-linear-gradient(top, #e67300, #cc6600);
+  background-image: -moz-linear-gradient(top, #e67300, #cc6600);
+  background-image: -o-linear-gradient(top, #e67300, #cc6600);
+  background-image: linear-gradient(to bottom, #e67300, #cc6600);
+}
+.button:active,
+.button:visited:active {
+  background-color: #ff8000;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e67300), to(#ff8000));
+  background-image: -webkit-linear-gradient(top, #e67300, #ff8000);
+  background-image: -moz-linear-gradient(top, #e67300, #ff8000);
+  background-image: -o-linear-gradient(top, #e67300, #ff8000);
+  background-image: linear-gradient(to bottom, #e67300, #ff8000);
+}
+.blue-button,
+.blue-button:visited {
+  border-color: #460252;
+  text-shadow: 0 1px 1px #460252;
+  background-color: #5b036a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#700483), to(#5b036a));
+  background-image: -webkit-linear-gradient(top, #700483, #5b036a);
+  background-image: -moz-linear-gradient(top, #700483, #5b036a);
+  background-image: -o-linear-gradient(top, #700483, #5b036a);
+  background-image: linear-gradient(to bottom, #700483, #5b036a);
+  -webkit-box-shadow: inset 0 0 3px #b406d2;
+  -moz-box-shadow: inset 0 0 3px #b406d2;
+  box-shadow: inset 0 0 3px #b406d2;
+}
+.blue-button:hover,
+.blue-button:visited:hover,
+.blue-button:focus,
+.blue-button:visited:focus {
+  border-color: #310239;
+  background-color: #460252;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5f036f), to(#460252));
+  background-image: -webkit-linear-gradient(top, #5f036f, #460252);
+  background-image: -moz-linear-gradient(top, #5f036f, #460252);
+  background-image: -o-linear-gradient(top, #5f036f, #460252);
+  background-image: linear-gradient(to bottom, #5f036f, #460252);
+}
+.blue-button:active,
+.blue-button:visited:active {
+  background-color: #700483;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5b036a), to(#700483));
+  background-image: -webkit-linear-gradient(top, #5b036a, #700483);
+  background-image: -moz-linear-gradient(top, #5b036a, #700483);
+  background-image: -o-linear-gradient(top, #5b036a, #700483);
+  background-image: linear-gradient(to bottom, #5b036a, #700483);
+}
+.z-hack {
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+.read-more-section {
+  display: none;
+}
+/*
+BASE (MOBILE) SIZE
+This are the mobile styles. It's what people see on their phones. If
+you set a great foundation, you won't need to add too many styles in
+the other stylesheets. Remember, keep it light: Speed is Important.
+*/
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+------------ MAP ------------
+
+01. GENERAL STYLES
+02. WORDPRESS BODY CLASSES
+03. LAYOUT & GRID STYLES
+04. LINK STYLES
+05. H1, H2, H3, H4, H5 STYLES
+06. HEADER STYLES
+07. NAVIGATION STYLES
+08. POSTS & CONTENT STYLES
+09. PAGE NAVI STYLES
+10. FOOTER STYLES
+11. SUPERLUX VIDEO EMBEDS
+
+******************************************************************/
+/*********************
+01. GENERAL STYLES
+*********************/
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  background: #000000;
+  color: #ffffff;
+}
+/********************
+02. WORDPRESS BODY CLASSES
+    style a page via class
+********************/
+/* for sites that are read right to left (i.e. hebrew) */
+/* home page */
+/* blog template page */
+/* archive page */
+/* date archive page */
+/* replace the number to the corresponding page number */
+/* search page */
+/* search result page */
+/* no results search page */
+/* individual paged search (i.e. body.search-paged-3) */
+/* 404 page */
+/* single post page */
+/* individual post page by id (i.e. body.postid-73) */
+/* individual paged single (i.e. body.single-paged-3) */
+/* attatchment page */
+/* individual attatchment page (i.e. body.attachmentid-763) */
+/* style mime type pages */
+/* author page */
+/* user nicename (i.e. body.author-samueladams) */
+/* paged author archives (i.e. body.author-paged-4) for page 4 */
+/* category page */
+/* individual category page (i.e. body.category-6) */
+/* replace the number to the corresponding page number */
+/* tag page */
+/* individual tag page (i.e. body.tag-news) */
+/* replace the number to the corresponding page number */
+/* custom page template page */
+/* individual page template (i.e. body.page-template-contact-php */
+/* replace the number to the corresponding page number */
+/* parent page template */
+/* child page template */
+/* replace the number to the corresponding page number */
+/* if user is logged in */
+/* paged items like search results or archives */
+/* individual paged (i.e. body.paged-3) */
+/*********************
+03. LAYOUT & GRID STYLES
+*********************/
+.wrap {
+  margin: 0 auto;
+}
+#container {
+  margin: auto;
+  min-width: 320px;
+  max-width: 3853px;
+}
+/*********************
+04. LINK STYLES
+*********************/
+a,
+a:visited {
+  color: #ff8000;
+  text-decoration: none;
+  /* on hover */
+
+  /* on click */
+
+  /* mobile tap color */
+
+}
+a:hover,
+a:visited:hover,
+a:focus,
+a:visited:focus {
+  color: #ff972e;
+}
+a:link,
+a:visited:link {
+  /*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
+}
+/******************************************************************
+05. H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  text-rendering: optimizelegibility;
+  font-weight: 400;
+  /*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+  /* removing text decoration from all headline links */
+
+}
+h1 a,
+.h1 a,
+h2 a,
+.h2 a,
+h3 a,
+.h3 a,
+h4 a,
+.h4 a,
+h5 a,
+.h5 a {
+  text-decoration: none;
+}
+h1,
+.h1 {
+  font-size: 2.5em;
+  line-height: 1.333em;
+  margin: 10px 0;
+}
+h2,
+.h2 {
+  font-size: 1.75em;
+  line-height: 1.4em;
+  margin-bottom: 0.375em;
+}
+h3,
+.h3 {
+  font-size: 1.125em;
+}
+h4,
+.h4 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+h5,
+.h5 {
+  font-size: 0.846em;
+  line-height: 2.09em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+/*********************
+06. HEADER STYLES
+*********************/
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+}
+.header #logo {
+  text-align: center;
+  margin: 20px 0;
+}
+.header #logo #logo-link {
+  width: 80%;
+  display: inline-block;
+  text-indent: -999em;
+  height: 150px;
+  background-size: auto;
+  background-image: url('../images/logos/blowout-logo-300px.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  .header #logo #logo-link {
+    background-image: url('../images/logos/blowout-logo-600px.png');
+    background-size: 300px 83px;
+  }
+}
+.header #description {
+  position: absolute;
+  left: -999em;
+}
+.header nav {
+  text-align: center;
+  position: fixed;
+  z-index: 99;
+  background-color: #ff8000;
+  bottom: 0;
+  width: 100%;
+  line-height: 13px;
+}
+.header nav ul {
+  margin: 0;
+}
+.header nav ul li {
+  float: left;
+}
+.header nav ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 18px 5px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+/*********************
+07. NAVIGATION STYLES
+*********************/
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+.nav {
+  /* end .menu li */
+
+  /* highlight current page */
+
+  /* end current highlighters */
+
+}
+.nav li {
+  /*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+
+}
+.nav li a {
+  display: block;
+  text-decoration: none;
+  background-color: #ff8000;
+  color: #ffffff;
+}
+.nav li a:hover,
+.nav li a:focus {
+  background-color: #ff972e;
+  color: #ffffff;
+}
+.nav li ul.sub-menu li a,
+.nav li ul.children li a {
+  padding-left: 30px;
+}
+.nav li.current-menu-item a,
+.nav li.current_page_item a,
+.nav li.current_page_ancestor a {
+  background-color: #e6d600;
+  color: #700483;
+}
+/* end .nav */
+/*********************
+08. POSTS & CONTENT STYLES
+*********************/
+/* end .hentry */
+/* want to style individual post classes? Booya! */
+/* post by id (i.e. post-3) */
+/* general post style */
+/* general article on a page style */
+/* general style on an attatchment */
+/* sticky post style */
+/* hentry class */
+/* style by category (i.e. category-videos) */
+/* style by tag (i.e. tag-news) */
+/* post meta */
+.byline {
+  color: #999;
+}
+/* entry content */
+.entry-content {
+  /*
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/
+
+}
+.entry-content dd {
+  margin-left: 0;
+  font-size: 0.9em;
+  color: #787878;
+  margin-bottom: 1.5em;
+}
+.entry-content img {
+  margin: 0 0 1.5em 0;
+  max-width: 100%;
+  height: auto;
+}
+.entry-content video,
+.entry-content object {
+  max-width: 100%;
+  height: auto;
+}
+.entry-content pre {
+  background: #eee;
+  border: 1px solid #cecece;
+  padding: 10px;
+}
+/* end .entry-content */
+.wp-caption {
+  max-width: 100%;
+  background: #eee;
+  padding: 5px;
+  /* images inside wp-caption */
+
+}
+.wp-caption img {
+  max-width: 100%;
+  margin-bottom: 0;
+  width: 100%;
+}
+.wp-caption p.wp-caption-text {
+  font-size: 0.85em;
+  margin: 4px 0 7px;
+  text-align: center;
+}
+/* end .wp-caption */
+/* image gallery styles */
+/* end .gallery */
+/* gallery caption styles */
+/******************************************************************
+09. PAGE NAVI STYLES
+******************************************************************/
+.page-navigation,
+.wp-prev-next {
+  margin: 1.1em 0 2.2em;
+}
+.bones_page_navi {
+  /* current page link */
+
+  /* end .bones_page_navi .bpn-current */
+
+  /* common styles for page-navi links */
+
+  /* remove the bg on end links */
+
+  /* previous link */
+
+  /* next page link */
+
+  /* first page link */
+
+  /* last page link */
+
+}
+.bones_page_navi li {
+  float: left;
+  margin-left: 10px;
+}
+.bones_page_navi li a {
+  padding: 3px 6px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+}
+.bones_page_navi li a:hover,
+.bones_page_navi li a:focus {
+  color: #f01d4f;
+  text-decoration: underline;
+}
+.bones_page_navi li.bpn-current {
+  padding: 3px 6px;
+  border-bottom: 2px solid #f01d4f;
+  position: relative;
+}
+.bones_page_navi li.bpn-current a {
+  /* hovering on current page link */
+
+}
+.bones_page_navi li.bpn-prev-link,
+.bones_page_navi li.bpn-next-link {
+  font-weight: 700;
+}
+.bones_page_navi li.bpn-prev-link a,
+.bones_page_navi li.bpn-next-link a {
+  padding: 0;
+}
+.bones_page_navi li.bpn-prev-link a:hover,
+.bones_page_navi li.bpn-next-link a:hover,
+.bones_page_navi li.bpn-first-page-link a:hover,
+.bones_page_navi li.bpn-last-page-link a:hover {
+  background: none;
+}
+/* end .bones_page_navi */
+/* fallback previous & next links */
+.wp-prev-next .prev-link {
+  float: left;
+}
+.wp-prev-next .next-link {
+  float: right;
+}
+/* end .wp-prev-next */
+/*********************
+10. FOOTER STYLES
+*********************/
+.footer {
+  clear: both;
+}
+.footer #inner-footer {
+  padding: 0 35px;
+}
+/*
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
+/* end .footer-links */
+#return-to-top {
+  background-image: url('../images/svg/up-arrow-mobile.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  color: #ffffff;
+  padding: 10px;
+  width: 50px;
+  display: block;
+  overflow: hidden;
+  height: 49px;
+  text-indent: -999em;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 12px 17px;
+  font-size: 14px;
+  line-height: 29px;
+}
+#return-to-top:hover {
+  background-color: #ff972e;
+}
+/*********************
+11. SUPERLUX VIDEO EMBEDS
+*********************/
+.slx-video-container {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+.slx-video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*********************
+12. SOCIAL MEDIA BS
+*********************/
+#bo-social-media {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 150px;
+}
+#bo-social-media .fb-like {
+  background-color: rgba(100, 100, 100, 0.5);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  max-width: 360px;
+  padding: 20px;
+}
+/*
+PORTRAIT VIEWPORTS
+*/
+/*********************
+BLOWOUT SLIDES (IMAGES)
+*********************/
+@media (max-height: 480px) {
+  #home {
+    background-image: url('../images/slides/portrait/480/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/portrait/480/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/portrait/480/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/portrait/480/synopsis.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/portrait/480/presskit.jpg');
+  }
+}
+@media (min-height: 480px) and (max-height: 768px) {
+  #home {
+    background-image: url('../images/slides/portrait/768/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/portrait/768/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/portrait/768/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/portrait/768/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/portrait/768/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/portrait/768/presskit.jpg');
+  }
+}
+@media (min-height: 768px) and (max-height: 1024px) {
+  #home {
+    background-image: url('../images/slides/portrait/1024/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/portrait/1024/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/portrait/1024/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/portrait/1024/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/portrait/1024/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/portrait/1024/presskit.jpg');
+  }
+}
+@media (min-height: 1024px) {
+  /* Max Height 1240px */
+  #home {
+    background-image: url('../images/slides/portrait/1240/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/portrait/1240/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/portrait/1240/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/portrait/1240/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/portrait/1240/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/portrait/1240/presskit.jpg');
+  }
+}
+/*********************
+BLOWOUT SLIDES (GENERAL)
+*********************/
+.bo-page {
+  width: 100%;
+  background-color: #1a1a1a;
+  position: relative;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.bo-page div {
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.bo-page .page-title {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  padding: 0 24px;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 99;
+}
+.bo-page .entry-content {
+  background-color: #000000;
+  padding: 20px;
+}
+.bo-page .entry-content h2,
+.bo-page .entry-content .h2 {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 28px;
+  font-size: 28px;
+}
+/*********************
+BLOWOUT SLIDES (SPECIFIC)
+*********************/
+#home {
+  top: 0;
+  background-position: right bottom;
+  /* This is so that the people don't interfere with the header */
+
+  min-height: 375px;
+}
+#home .people {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+#watch-trailer {
+  background-color: #700483;
+  padding: 0;
+  background-position: right bottom;
+  background-attachment: fixed;
+}
+#watch-trailer .entry-content {
+  padding: 0;
+  background: none;
+}
+#watch-trailer .entry-content .slx-video-container {
+  transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  z-index: 99;
+}
+#watch-trailer .entry-content .slx-video-container iframe {
+  cursor: pointer;
+}
+#watch-trailer .entry-content .video-overlay {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+#watch-trailer .entry-content .video-overlay .image {
+  background-image: url('../images/watch-trailer-poster-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+#watch-trailer .entry-content .video-overlay .image:hover {
+  opacity: 0.75;
+}
+#watch-trailer .entry-content .video-overlay .icon {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-image: url('../images/watch-trailer-play-icon.png');
+  background-position: center center;
+  background-size: auto 50%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+#watch-trailer .people {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-attachment: fixed;
+}
+#synopsis {
+  padding: 0 0 0 0;
+  background-position: center top;
+  min-height: 490px;
+}
+#synopsis .page-title {
+  background-color: #ffee00;
+  color: #700483;
+}
+#synopsis .entry-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+#filmmakers {
+  background-color: #000000;
+  padding: 0 0 0 0;
+  background-position: center top;
+  min-height: 600px;
+}
+#filmmakers .page-title {
+  background-color: #4bc034;
+}
+#filmmakers .entry-content {
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+#press-kit {
+  background-position: center top;
+}
+#press-kit .page-title {
+  background-color: #1f6cd3;
+}
+#press-kit .entry-content {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+#press-kit .entry-content h2,
+#press-kit .entry-content .h2 {
+  color: #1f6cd3;
+}
+/*********************
+FULL STYLES
+*********************/
+@media (min-width: 768px), (min-aspect-ratio: 4/3) {
+  {
+    /*********************
+  BLOWOUT SLIDES (GENERAL)
+  *********************/
+  
+    /*********************
+  BLOWOUT SLIDES (SPECIFIC)
+  *********************/
+  
+  }
+  .header {
+    position: fixed;
+    z-index: 100;
+    width: 200px;
+    top: 10px;
+    right: 10px;
+    transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+  }
+  .header #logo #logo-link {
+    width: 100%;
+    height: 55px;
+    background-image: url('../images/logos/blowout-logo-200px.png');
+  }
+  .header nav {
+    background: none;
+    position: relative;
+  }
+  .header nav ul {
+    display: inline-block;
+  }
+  .header nav ul li {
+    float: none;
+  }
+  .header nav ul li a {
+    background: none;
+    color: #ff8000;
+    font-size: 12px;
+    font-style: italic;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -2px 2px 0 #000000;
+    font-weight: 900;
+    padding: 0 0 10px 0;
+  }
+  .header nav ul li a:hover {
+    background: none;
+    color: #ff972e;
+  }
+  .header nav ul li.current-menu-item a {
+    background: none;
+    color: #e6d600;
+  }
+  .footer #return-to-top {
+    background-image: url('../images/svg/up-arrow.svg');
+    bottom: 50px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: skewX(-10deg);
+  }
+  .footer #return-to-top:hover {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.9;
+  }
+  #bo-social-media {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    text-align: left;
+    width: 340px;
+    z-index: 200;
+  }
+  #bo-social-media .fb-like {
+    -webkit-border-radius: 8px 0 0 0;
+    -moz-border-radius: 8px 0 0 0;
+    border-radius: 8px 0 0 0;
+    background-color: rgba(20, 20, 20, 0.9);
+    padding: 10px;
+  }
+  .bo-page {
+    background-size: auto !important;
+    background-attachment: fixed;
+  }
+  .bo-page .page-content {
+    margin-top: 10%;
+  }
+  .bo-page article {
+    padding-right: 225px;
+  }
+  .bo-page article .page-title {
+    display: inline-block;
+    width: 100%;
+    max-width: 600px;
+    margin-right: 200px;
+    padding-left: 40px !important;
+    transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    font-size: 30px;
+  }
+  .bo-page article .entry-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 200px 150px 0;
+    padding-left: 40px !important;
+    transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    font-size: 14px;
+  }
+  #home {
+    background-attachment: fixed;
+    background-size: auto;
+  }
+  #home .page-content {
+    margin-top: 0;
+  }
+  #home .people {
+    background-attachment: fixed;
+    background-size: auto;
+    background-position: right bottom;
+  }
+  #watch-trailer .page-title {
+    background-color: #ffee00;
+    color: #700483;
+  }
+  #watch-trailer .entry-content {
+    background: none;
+  }
+  #synopsis {
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: auto;
+  }
+  #synopsis .page-title {
+    background: #700483;
+    color: #ffee00;
+  }
+  #filmmakers {
+    background-attachment: fixed;
+    background-size: auto;
+  }
+  #filmmakers .page-title {
+    background: #ffee00;
+    color: #700483;
+  }
+  #filmmakers .entry-content h2,
+  #filmmakers .entry-content .h2 {
+    color: #4bc034;
+  }
+  #press-kit {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: auto;
+  }
+  #press-kit .page-title {
+    background: #700483;
+    color: #ffee00;
+  }
+}
+@media (min-width: 768px) and only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-aspect-ratio: 4/3) and only screen and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and only screen and (min--moz-device-pixel-ratio: 1.5), (min-aspect-ratio: 4/3) and only screen and (min--moz-device-pixel-ratio: 1.5), (min-width: 768px) and only screen and (min-device-pixel-ratio: 1.5), (min-aspect-ratio: 4/3) and only screen and (min-device-pixel-ratio: 1.5) {
+  .header #logo #logo-link {
+    background-image: url('../images/logos/blowout-logo-400px.png');
+    background-size: 200px 55px;
+  }
+}
+/* End Media Query *//*
+STANDARD VIEWPORTS
+*/
+@media only screen and (min-aspect-ratio: 4/3) {
+  {
+    /*********************
+  BLOWOUT SLIDES (IMAGES)
+  *********************/
+  
+    /*********************
+  BLOWOUT SLIDES (GENERAL)
+  *********************/
+  
+    /*********************
+  BLOWOUT SLIDES (SPECIFIC)
+  *********************/
+  
+  }
+  .header {
+    width: 300px;
+    top: auto;
+    bottom: 100px;
+    right: 20px;
+  }
+  .header #logo #logo-link {
+    height: 83px;
+    background-image: url('../images/logos/blowout-logo-300px.png');
+  }
+  .header nav {
+    position: absolute;
+    bottom: 100px;
+  }
+  .header nav ul li {
+    float: left;
+  }
+  .header nav ul li a {
+    /*text-shadow: -1px -1px 0 #000000,
+  					1px -1px 0 #000000,
+  					-1px 1px 0 #000000,
+  					1px 1px 0 #000000,
+  					-2px 2px 0 #000;*/
+  
+    padding: 18px 11px 18px 0;
+  }
+  .bo-page article {
+    padding-right: 350px;
+  }
+  .bo-page article .page-title {
+    max-width: 700px;
+  }
+  .bo-page article .entry-content {
+    font-size: 16px;
+    max-width: 700px;
+  }
+  #home .people {
+    background-position: right top;
+  }
+  #watch-trailer {
+    background-position: right top;
+  }
+  #synopsis {
+    background-position: center top;
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-aspect-ratio: 4/3) and only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-aspect-ratio: 4/3) and only screen and (min-device-pixel-ratio: 1.5) {
+  .header #logo #logo-link {
+    background-image: url('../images/logos/blowout-logo-600px.png');
+    background-size: 300px 83px;
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (max-height: 480px) {
+  #home {
+    background-image: url('../images/slides/standard/480/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/standard/480/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/standard/480/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/standard/480/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/standard/480/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/standard/480/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (min-height: 480px) and (max-height: 768px) {
+  #home {
+    background-image: url('../images/slides/standard/768/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/standard/768/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/standard/768/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/standard/768/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/standard/768/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/standard/768/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (min-height: 768px) and (max-height: 1024px) {
+  #home {
+    background-image: url('../images/slides/standard/1024/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/standard/1024/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/standard/1024/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/standard/1024/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/standard/1024/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/standard/1024/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 4/3) and (min-height: 1024px) {
+  {
+    /* Max Height 1240px */
+  
+  }
+  #home {
+    background-image: url('../images/slides/standard/1240/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/standard/1240/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/standard/1240/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/standard/1240/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/standard/1240/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/standard/1240/presskit.jpg');
+  }
+}
+/*
+WIDESCREEN VIEWPORTS
+*/
+@media only screen and (min-aspect-ratio: 16/9) {
+  {
+    /*********************
+  BLOWOUT SLIDES (IMAGES)
+  *********************/
+  
+    /*********************
+  BLOWOUT SLIDES (SPECIFIC)
+  *********************/
+  
+  }
+  .header {
+    width: 600px;
+  }
+  .header #logo #logo-link {
+    height: 165px;
+    background-image: url('../images/logos/blowout-logo-600px.png');
+  }
+  .header nav {
+    bottom: 200px;
+  }
+  .header nav ul li {
+    float: left;
+  }
+  .header nav ul li a {
+    font-size: 22px;
+    text-shadow: -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, 1px 1px 0 #000000, -2px 2px 0 #000000;
+  }
+  #press-kit {
+    background-position: right bottom;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-aspect-ratio: 16/9) and only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-aspect-ratio: 16/9) and only screen and (min-device-pixel-ratio: 1.5) {
+  .header #logo #logo-link {
+    background-image: url('../images/logos/blowout-logo-1200px.png');
+    background-size: 600px 165px;
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (max-height: 480px) {
+  #home {
+    background-image: url('../images/slides/widescreen/480/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/widescreen/480/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/widescreen/480/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/widescreen/480/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/widescreen/480/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/widescreen/480/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-height: 480px) and (max-height: 768px) {
+  #home {
+    background-image: url('../images/slides/widescreen/768/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/widescreen/768/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/widescreen/768/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/widescreen/768/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/widescreen/768/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/widescreen/768/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-height: 768px) and (max-height: 1024px) {
+  #home {
+    background-image: url('../images/slides/widescreen/1024/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/widescreen/1024/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/widescreen/1024/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/widescreen/1024/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/widescreen/1024/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/widescreen/1024/presskit.jpg');
+  }
+}
+@media only screen and (min-aspect-ratio: 16/9) and (min-height: 1024px) {
+  {
+    /* Max Height 1240px */
+  
+  }
+  #home {
+    background-image: url('../images/slides/widescreen/1240/home.jpg');
+  }
+  #home .people {
+    background-image: url('../images/slides/widescreen/1240/home-people.png');
+  }
+  #watch-trailer {
+    background-image: url('../images/slides/widescreen/1240/watch-trailer-people.png');
+  }
+  #synopsis {
+    background-image: url('../images/slides/widescreen/1240/synopsis.jpg');
+  }
+  #filmmakers {
+    background-image: url('../images/slides/widescreen/1240/filmmakers.jpg');
+  }
+  #press-kit {
+    background-image: url('../images/slides/widescreen/1240/presskit.jpg');
+  }
+}
+/**********************************
+BEGIN DEBUGGING STYLES
+**********************************/
+/*
+@media (min-aspect-ratio:289/108) {
+
+	* {
+		display:none;
+	}
+}
+
+@media (max-aspect-ratio:9/16) {
+
+	* {
+		display:none;
+	}
+}
+*/
+/**********************************
+END DEBUGGING STYLES
+**********************************/
+/* MISC GLOBAL STYLES */
+.bo-page {
+  height: 100%;
+  min-height: 100%;
+}
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2,3) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /******************************************************************
+  Site Name: 
+  Author: 
+  
+  Stylesheet: Retina Screens & Devices Stylesheet
+  
+  When handling retina screens you need to make adjustments, especially
+  if you're not using font icons. Here you can add them in one neat
+  place.
+  
+  ******************************************************************/
+  /* 
+  
+  EXAMPLE 
+  Let's say you have an image and you need to make sure it looks ok
+  on retina screens. Let's say we have an icon which dimension are
+  24px x 24px. In your regular stylesheets, it would look something
+  like this:
+  
+  .icon {
+  	width: 24px;
+  	height: 24px;
+  	background: url(img/test.png) no-repeat;
+  }
+  
+  For retina screens, we have to make some adjustments, so that image
+  doesn't look blurry. So, taking into account the image above and the
+  dimensions, this is what we would put in our retina stylesheet:
+  
+  .icon {
+  	background: url(img/test@2x.png) no-repeat;
+  	background-size: 24px 24px;
+  }
+  
+  So, you would create the same icon, but at double the resolution, meaning 
+  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+  (this is pretty standard practice). Set the background image so it matches
+  the original dimensions and you are good to go. 
+  
+  */
+}
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  
+}
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+  /******************************************************************
+  Site Name:
+  Author:
+  
+  Stylesheet: Print Stylesheet
+  
+  This is the print stylesheet. There's probably not a lot
+  of reasons to edit this stylesheet. If you want to
+  though, go for it.
+  
+  ******************************************************************/
+  * {
+    background: transparent !important;
+    color: black !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+  a,
+  a:visited {
+    color: #444 !important;
+    text-decoration: underline;
+  }
+  a:after,
+  a:visited:after {
+    content: " (" attr(href) ")";
+  }
+  a abbr[title]:after,
+  a:visited abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+  .sidebar,
+  .page-navigation,
+  .wp-prev-next,
+  .respond-form,
+  nav {
+    display: none;
+  }
+}
+/* ADDITIONAL STYLES */
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+.fancybox-skin {
+  position: relative;
+  background: #222;
+  color: #fff;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.fancybox-opened {
+  z-index: 8030;
+}
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+.fancybox-outer,
+.fancybox-inner {
+  position: relative;
+}
+.fancybox-inner {
+  overflow: hidden;
+}
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+.fancybox-image,
+.fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+#fancybox-loading,
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span {
+  background-image: url('../images/fancybox/fancybox_sprite.png');
+}
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url('../images/fancybox/fancybox_loading.gif') center center no-repeat;
+}
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url('../images/fancybox/blank.gif');
+  /* helps IE */
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8040;
+}
+.fancybox-prev {
+  left: 0;
+}
+.fancybox-next {
+  right: 0;
+}
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+/* Overlay helper */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url('../images/fancybox/fancybox_overlay.png');
+}
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+/* Title helper */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #fancybox-loading,
+  .fancybox-close,
+  .fancybox-prev span,
+  .fancybox-next span {
+    background-image: url('../images/fancybox/fancybox_sprite@2x.png');
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  
+  }
+  #fancybox-loading div {
+    background-image: url('../images/fancybox/fancybox_loading@2x.gif');
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  
+  }
+}
